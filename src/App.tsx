@@ -135,21 +135,23 @@ export const MyEditor = () => {
   });
 
   return (
-    <AllStyledComponent>
-      <ThemeProvider
-        theme={{
-          color: {
-            border: "none",
-            active: { border: "none" },
-            outline: "none",
-          },
-        }}
-      >
-        <Remirror manager={manager} initialContent={state}>
-          <MyEditorComponent />
-        </Remirror>
-      </ThemeProvider>
-    </AllStyledComponent>
+    <div data-testid="container">
+      <AllStyledComponent>
+        <ThemeProvider
+          theme={{
+            color: {
+              border: "none",
+              active: { border: "none" },
+              outline: "none",
+            },
+          }}
+        >
+          <Remirror manager={manager} initialContent={state}>
+            <MyEditorComponent />
+          </Remirror>
+        </ThemeProvider>
+      </AllStyledComponent>
+    </div>
   );
 };
 
