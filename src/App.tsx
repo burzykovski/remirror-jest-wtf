@@ -1,15 +1,12 @@
 import React, { useState, MouseEventHandler, useCallback } from "react";
-import { ThemeProvider } from "@remirror/react";
-import { AllStyledComponent } from "@remirror/styles/emotion";
-import { CountExtension } from "@remirror/extension-count";
 import {
+  AllStyledComponent,
+  CountExtension,
   BoldExtension,
   ItalicExtension,
   PlaceholderExtension,
   BulletListExtension,
-} from "remirror/extensions";
-
-import {
+  ThemeProvider,
   Remirror,
   useRemirror,
   useActive,
@@ -20,7 +17,7 @@ import {
   ToggleBoldButton,
   ToggleItalicButton,
   ToggleBulletListButton,
-} from "@remirror/react";
+} from "@my/remirror";
 import styled from "@emotion/styled";
 
 const StyledEditorComponent = styled.div`
